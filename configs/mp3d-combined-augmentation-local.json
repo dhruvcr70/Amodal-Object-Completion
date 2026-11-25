@@ -1,0 +1,13 @@
+{
+  "dataset": "data/mp3d-subset-v3",
+  "run": "runs/mp3d-v5-combined-val",
+  "precision": "fp32",
+  "epochs": 8,
+  "batch_size": 8,
+  "base_channels": 16,
+  "learning_rate": 0.001,
+  "seed": 42,
+  "augment_occlusion": true,
+  "augmentation_probability": 0.7,
+  "hidden_positive_weight": 2.0
+}

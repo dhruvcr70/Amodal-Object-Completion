@@ -1,0 +1,10 @@
+{
+  "dataset": "data/shapes-v1",
+  "run": "runs/shapes-v1-fp32",
+  "precision": "fp32",
+  "epochs": 8,
+  "batch_size": 8,
+  "base_channels": 16,
+  "learning_rate": 0.001,
+  "seed": 42
+}

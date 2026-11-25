@@ -1,0 +1,9 @@
+{
+  "model": "cvlab-columbia/pix2gestalt",
+  "resolution": 256,
+  "candidates": 1,
+  "ddim_steps": 50,
+  "guidance_scale": 2.0,
+  "seed": 42,
+  "status": "planned_initial_configuration"
+}

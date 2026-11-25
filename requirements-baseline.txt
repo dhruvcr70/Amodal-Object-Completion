@@ -1,0 +1,20 @@
+# Isolated Python 3.10 environment; do not install into Colab's base interpreter.
+numpy==1.26.4
+torch==2.1.2
+torchvision==0.16.2
+pytorch-lightning==1.9.5
+torchmetrics==0.11.4
+omegaconf==2.3.0
+transformers==4.30.2
+einops==0.6.1
+kornia==0.6.12
+Pillow==10.4.0
+opencv-python-headless==4.10.0.84
+segment-anything==1.0
+ftfy==6.2.3
+regex
+tqdm
+requests
+scipy
+tensorboard
+matplotlib

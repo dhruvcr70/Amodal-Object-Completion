@@ -1,0 +1,16 @@
+{
+  "dataset": "data/mp3d-subset-v3",
+  "run": "runs/mp3d-v6-severe-occlusion-val",
+  "precision": "fp32",
+  "epochs": 8,
+  "batch_size": 8,
+  "base_channels": 16,
+  "learning_rate": 0.001,
+  "seed": 42,
+  "augment_occlusion": true,
+  "augmentation_probability": 0.7,
+  "augmentation_min_occlusion": 0.25,
+  "augmentation_max_occlusion": 0.75,
+  "augmentation_max_extent": 0.85,
+  "hidden_positive_weight": 2.0
+}

@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+checkpoints/
+third_party/
+inputs/
+runs/
+data/
+.ipynb_checkpoints/
+.venv-sam-ui/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+wandb/
+.vscode/settings.json

@@ -1,0 +1,7 @@
+# Lightweight data preparation and visualization; GPU training is set up separately.
+numpy
+Pillow
+matplotlib
+PyYAML
+opencv-python-headless
+simple-lama-inpainting

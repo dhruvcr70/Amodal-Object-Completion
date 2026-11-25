@@ -1,0 +1,116 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Train silhouette model",
+      "type": "process",
+      "command": "${config:python.defaultInterpreterPath}",
+      "args": [
+        "scripts/train_silhouette.py",
+        "--config",
+        "configs/shapes-local.json"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Resume silhouette training",
+      "type": "process",
+      "command": "${config:python.defaultInterpreterPath}",
+      "args": [
+        "scripts/train_silhouette.py",
+        "--config",
+        "configs/shapes-local.json",
+        "--resume"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Train on COCOA subset",
+      "type": "process",
+      "command": "${config:python.defaultInterpreterPath}",
+      "args": [
+        "scripts/train_silhouette.py",
+        "--config",
+        "configs/cocoa-local.json"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Train on MP3D-Amodal subset",
+      "type": "process",
+      "command": "${config:python.defaultInterpreterPath}",
+      "args": [
+        "scripts/train_silhouette.py",
+        "--config",
+        "configs/mp3d-local.json"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Generate shapes dataset",
+      "type": "process",
+      "command": "${config:python.defaultInterpreterPath}",
+      "args": [
+        "scripts/generate_shapes.py"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run core tests",
+      "type": "process",
+      "command": "${config:python.defaultInterpreterPath}",
+      "args": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Verify local CUDA training",
+      "type": "process",
+      "command": "${config:python.defaultInterpreterPath}",
+      "args": [
+        "${workspaceFolder}/scripts/verify_gpu.py"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Check local hardware",
+      "type": "process",
+      "command": "${config:python.defaultInterpreterPath}",
+      "args": [
+        "${workspaceFolder}/scripts/check_hardware.py"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

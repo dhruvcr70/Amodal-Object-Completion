@@ -1,0 +1,12 @@
+{
+  "dataset": "data/abo-rgb-pairs-v1",
+  "run": "runs/abo-rgb-unet-v1",
+  "epochs": 10,
+  "batch_size": 2,
+  "base_channels": 16,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "mixed_precision": true,
+  "early_stopping_patience": 5,
+  "seed": 2026
+}

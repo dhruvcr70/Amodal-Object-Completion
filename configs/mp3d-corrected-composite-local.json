@@ -1,0 +1,10 @@
+{
+  "dataset": "data/mp3d-subset-v4-corrected-crops",
+  "run": "runs/mp3d-corrected-silhouette-v1",
+  "precision": "fp32",
+  "epochs": 8,
+  "batch_size": 8,
+  "base_channels": 16,
+  "learning_rate": 0.001,
+  "seed": 42
+}
